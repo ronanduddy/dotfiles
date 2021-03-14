@@ -1,0 +1,18 @@
+# general
+alias dev='cd ~/dev'
+alias pan='cd ~/dev/panacea'
+alias dotfiles='cd ~/dotfiles'
+alias reload='. ~/.zshrc'
+
+# grep
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+
+# xargs
+alias map='xargs -n1'
+
+# The Silver Searcher
+alias agf='ag --smart-case --pager="less -MIRFX"'
+
+# TODO: brewfile for tldr, ag, jq, exa, curl, rcm, fswatch, bat, rvm, docker...

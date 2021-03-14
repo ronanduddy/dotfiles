@@ -1,0 +1,99 @@
+[user]
+  name = Rónán Duddy
+  email = github+work@ronanduddy.com
+[alias]
+  # status
+  s = status
+  ss = status -s
+
+  # add
+  a = add
+  aa = add -A
+
+  # commit
+  c = commit -v
+  call = commit -v -a
+  cam = commit --amend
+  camh = commit -a --amend -C HEAD
+
+  # show
+  sh = show
+
+  # blame
+  bl = blame -b -w
+
+  # stash
+  st = stash
+  stls = stash list
+  stpo = stash pop
+  stbr = stash branch
+  stdr = stash drop
+
+  # checkout
+  co = checkout
+  cob = checkout -b
+  com = checkout master
+
+  # branch
+  b = branch
+  bd = branch -D
+
+  # rebase
+  r = rebase
+  ri = rebase -i
+  rc = rebase --continue
+
+  # cherry-pick
+  pick = cherry-pick
+
+  # fetch
+  f = fetch
+  fap = fetch --all --prune
+
+  # pull
+  pl = pull
+  plr = pull --rebase
+
+  # push
+  ps = push
+  psf = push --force
+
+  # merge
+  mg = merge
+
+  # shortlog
+  sl = shortlog
+  slc = shortlog -sn
+
+  # ls-files
+  ls = ls-files
+
+  # diff
+  d = diff
+  ds = diff --staged
+  dc = diff --name-only --diff-filter=U # Show unmerged (conflicted) files
+
+  # log
+  l = log
+  lp = log --graph --pretty=oneline --abbrev-commit
+  lpwho = log --graph --date=short --pretty=format:'%C(auto)%h %Cgreen%an%Creset %Cblue%cd%Creset %C(auto)%d %s'
+  lago = log --graph --pretty=format:'%C(bold)%h%Creset%C(magenta)%d%Creset %s %C(yellow)<%an> %C(cyan)(%cr)%Creset' --abbrev-commit --date=relative
+  lagostat = lago --stat
+  lmine = log HEAD@{1}..HEAD@{0} # Show commits since last pull
+
+  # whatchanged
+  lwc = whatchanged
+
+  # restore
+  rst = restore
+  rsts = restore --staged
+
+  # reset
+  rs = reset
+  rss = reset --soft
+  rssh = reset --soft HEAD^
+  #rsh = reset --hard
+
+  # revert
+  rv = revert
+  rvnc = revert --no-commit
