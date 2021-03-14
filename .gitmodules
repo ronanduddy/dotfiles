@@ -1,3 +1,6 @@
 [submodule "git-extra-commands"]
 	path = git-extra-commands
 	url = https://github.com/ronanduddy/git-extra-commands
+[submodule "git-extras"]
+	path = git-extras
+	url = https://github.com/ronanduddy/git-extras
