@@ -1,0 +1,4 @@
+#!/bin/sh
+
+# Find target in Ruby file
+find . -name "*.rb" | xargs grep -n

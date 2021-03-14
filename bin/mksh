@@ -1,0 +1,10 @@
+#!/bin/sh
+
+if [ -z "$1" ]
+then
+  echo 'Please provide a pathname for the new script'
+else
+  echo '#!/bin/sh' >> "$PWD/$1"
+  chmod +x "$PWD/$1"
+  $EDITOR "$PWD/$1"
+fi

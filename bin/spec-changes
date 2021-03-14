@@ -1,0 +1,4 @@
+#!/bin/sh
+
+# Run RSpec against changed specs
+bundle exec rspec $(git ls-files --modified --others spec)

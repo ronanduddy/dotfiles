@@ -1,0 +1,10 @@
+#!/bin/sh
+
+if [ -z "$1" ]
+then
+  echo 'Please provide the branch to finish with'
+else
+  git checkout master
+  git pull
+  git branch -D "$1"
+fi
