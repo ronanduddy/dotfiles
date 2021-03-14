@@ -1,0 +1,3 @@
+[submodule "git-extra-commands"]
+	path = git-extra-commands
+	url = https://github.com/ronanduddy/git-extra-commands
