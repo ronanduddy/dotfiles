@@ -178,7 +178,11 @@ set spellfile=$HOME/.vim-spell-en.utf-8.add
 set complete+=kspell
 
 " Always use vertical diffs
-set diffopt+=vertical
+" set diffopt+=vertical
+if &diff
+  set diffopt-=internal
+  set diffopt+=vertical
+endif
 
 " Use Catpuccin Latte as our default color scheme
 colorscheme catppuccin_latte
