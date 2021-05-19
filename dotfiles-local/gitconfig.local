@@ -53,6 +53,7 @@
   # pull
   pl = pull
   plr = pull --rebase
+  plrom = plr origin master
 
   # push
   ps = push
