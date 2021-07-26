@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# Run RSpec against specs in commit
+git diff-tree --no-commit-id --name-only -r $1 | grep spec.rb
+bundle exec rspec $(git diff-tree --no-commit-id --name-only -r $1 | grep spec.rb)
