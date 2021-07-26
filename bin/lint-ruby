@@ -1,4 +1,4 @@
 #!/bin/sh
 
 # Run Rubocop against changed files
-git diff --cached --stat --name-only | xargs bundle exec rubocop -A
+git diff --name-only | grep .rb | xargs bundle exec rubocop -A
