@@ -1,5 +1,10 @@
 # postgres
-export PATH="/usr/local/opt/postgresql@10/bin:$PATH"
+#export PATH="/usr/local/opt/postgresql@10/bin:$PATH"
+export PATH="/usr/local/opt/postgresql@13/bin:$PATH"
+
+export LDFLAGS="-L/usr/local/opt/postgresql@13/lib"
+export CPPFLAGS="-I/usr/local/opt/postgresql@13/include"
+export PKG_CONFIG_PATH="/usr/local/opt/postgresql@13/lib/pkgconfig"
 
 # nvm
 export NVM_DIR="$HOME/.nvm"
