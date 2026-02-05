@@ -32,7 +32,7 @@
   # checkout
   co = checkout
   cob = checkout -b
-  com = checkout master
+  com = checkout main
 
   # branch
   b = branch
@@ -53,7 +53,7 @@
   # pull
   pl = pull
   plr = pull --rebase
-  plrom = plr origin master
+  plrom = plr origin main
 
   # push
   ps = push
