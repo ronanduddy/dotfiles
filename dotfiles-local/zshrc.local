@@ -1,2 +1,8 @@
 # rbenv 
 eval "$(rbenv init - zsh)"
+
+# Docker
+export PATH="$PATH:$HOME/.docker/bin"
+
+# Claude
+export PATH="$PATH:$HOME/.local/bin"
