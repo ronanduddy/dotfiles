@@ -101,3 +101,9 @@
 
   # ai helpers
   cai = !git commit --amend --no-edit --trailer 'Co-authored-by: Claude <noreply@anthropic.com>'
+
+  # worktrees
+  wt = worktree
+  wta = worktree add
+  wtl = worktree list
+  wtrm = worktree remove
